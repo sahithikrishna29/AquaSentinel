@@ -28,7 +28,7 @@ if missing:
 
 df = df[required_columns].copy()
 df["value"] = pd.to_numeric(df["value"], errors="coerce")
-df["date"] = pd.to_datetime(df["date"], errors="coerce")
+df["date"] = pd.to_datetime(df["date"], format="mixed", errors="coerce")
 
 # Keep only pH and DO for this first analysis
 df = df[
@@ -154,3 +154,4 @@ print("2. anomaly_screening_results.csv")
 print("3. flagged_observations.csv")
 
 print("\nNOTE: Statistical flags are not confirmed pollution events.")
+
