@@ -35,3 +35,25 @@ Thumbs.db
 
 # ─── Jupyter ──────────────────────────────────
 .ipynb_checkpoints/
+
+# AquaSentinel team shared datasets
+!data/raw/
+!data/raw/*.csv
+!data/raw/*.json
+!data/raw/*.txt
+
+!data/processed/
+!data/processed/*.csv
+!data/processed/parameter_wise/
+!data/processed/parameter_wise/*.csv
+
+# AquaSentinel anomaly analysis results
+!Results/beas_anomaly_analysis/
+!Results/beas_anomaly_analysis/*.csv
+
+# Large archives and unrelated temporary files
+data.zip
+*.zip
+sample.arff
+aquasentinel_beas_synthetic_training.csv
+Water_Quality_Dashboard_Colab.ipynb

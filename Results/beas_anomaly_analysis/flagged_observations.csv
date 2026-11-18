@@ -1,0 +1,33 @@
+record_id,record_type,parameter,value,date,date_precision,station_name,source_agency,unit,lower_iqr_limit,upper_iqr_limit,statistical_flag,flag_reason
+CPCB-CHEM-93-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,7.5,,timestamp,BEAS AT D/S AUT,CPCB,mg/L,7.549999999999995,9.150000000000004,True,Outside station-wise IQR screening limits
+CPCB-CHEM-105-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,7.6,,timestamp,BEAS AT D/S DEHRAGOPIPUR,CPCB,mg/L,7.800000000000002,10.2,True,Outside station-wise IQR screening limits
+CPCB-CHEM-107-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,7.2,,timestamp,BEAS AT D/S DEHRAGOPIPUR,CPCB,mg/L,7.800000000000002,10.2,True,Outside station-wise IQR screening limits
+CPCB-CHEM-122-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,9.4,,timestamp,BEAS AT D/S MANALI,CPCB,mg/L,7.1125,9.212500000000002,True,Outside station-wise IQR screening limits
+CPCB-CHEM-134-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,10.8,,timestamp,BEAS AT D/S MANDI,CPCB,mg/L,7.499999999999999,10.100000000000001,True,Outside station-wise IQR screening limits
+CPCB-CHEM-158-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,5.5,,timestamp,BEAS AT D/S PONG DAM,CPCB,mg/L,7.1874999999999964,10.087500000000002,True,Outside station-wise IQR screening limits
+CPCB-CHEM-161-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,7.0,,timestamp,BEAS AT D/S PONG DAM,CPCB,mg/L,7.1874999999999964,10.087500000000002,True,Outside station-wise IQR screening limits
+CPCB-CHEM-169-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,7.0,,timestamp,BEAS AT D/S PONG DAM,CPCB,mg/L,7.1874999999999964,10.087500000000002,True,Outside station-wise IQR screening limits
+CPCB-CHEM-194-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,5.8,,timestamp,BEAS AT U/S KULLU,CPCB,mg/L,6.8375,9.5375,True,Outside station-wise IQR screening limits
+CPCB-CHEM-218-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,10.8,,timestamp,BEAS AT U/S PANDON DAM,CPCB,mg/L,7.499999999999999,10.100000000000001,True,Outside station-wise IQR screening limits
+CPCB-CHEM-222-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,6.6,,timestamp,BEAS AT U/S PANDON DAM,CPCB,mg/L,7.499999999999999,10.100000000000001,True,Outside station-wise IQR screening limits
+CPCB-CHEM-249-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,7.9,,timestamp,BEAS D/S NADAUN BRIDGE VILL BHADOLI,CPCB,mg/L,8.2625,9.7625,True,Outside station-wise IQR screening limits
+CPCB-CHEM-251-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,7.6,,timestamp,BEAS D/S NADAUN BRIDGE VILL BHADOLI,CPCB,mg/L,8.2625,9.7625,True,Outside station-wise IQR screening limits
+CPCB-CHEM-254-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,11.2,,timestamp,BEAS U/S MANDI,CPCB,mg/L,8.2625,9.962500000000002,True,Outside station-wise IQR screening limits
+CPCB-CHEM-556-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,9.8,,timestamp,MANALSU NALLAH BEFORE CONFLUENCE TO RIVER BEAS,CPCB,mg/L,7.225000000000002,9.424999999999997,True,Outside station-wise IQR screening limits
+CPCB-CHEM-892-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,9.9,,timestamp,RIVER BEAS D/S MANALSU NALLAH,CPCB,mg/L,7.037500000000002,9.737499999999997,True,Outside station-wise IQR screening limits
+CPCB-CHEM-916-Dissolved_Oxygen,sample_observation,Dissolved Oxygen,9.8,,timestamp,RIVER BEAS D/S OF WPF AT MANALI,CPCB,mg/L,6.812500000000001,9.712499999999999,True,Outside station-wise IQR screening limits
+CPCB-CHEM-104-pH,sample_observation,pH,7.11,,timestamp,BEAS AT D/S DEHRAGOPIPUR,CPCB,dimensionless,7.443750000000002,8.253749999999997,True,Outside station-wise IQR screening limits
+CPCB-CHEM-105-pH,sample_observation,pH,7.38,,timestamp,BEAS AT D/S DEHRAGOPIPUR,CPCB,dimensionless,7.443750000000002,8.253749999999997,True,Outside station-wise IQR screening limits
+CPCB-CHEM-106-pH,sample_observation,pH,7.3,,timestamp,BEAS AT D/S DEHRAGOPIPUR,CPCB,dimensionless,7.443750000000002,8.253749999999997,True,Outside station-wise IQR screening limits
+CPCB-CHEM-151-pH,sample_observation,pH,6.88,,timestamp,BEAS AT D/S PANDOH DAM,CPCB,dimensionless,7.00375,8.13375,True,Outside station-wise IQR screening limits
+CPCB-CHEM-165-pH,sample_observation,pH,7.02,,timestamp,BEAS AT D/S PONG DAM,CPCB,dimensionless,7.313749999999999,8.36375,True,Outside station-wise IQR screening limits
+CPCB-CHEM-225-pH,sample_observation,pH,7.96,,timestamp,BEAS AT U/S PANDON DAM,CPCB,dimensionless,6.983750000000001,7.953749999999999,True,Outside station-wise IQR screening limits
+CPCB-CHEM-230-pH,sample_observation,pH,7.0,,timestamp,BEAS AT U/S PATHANKOT PUNJAB,CPCB,dimensionless,7.3625,8.462500000000002,True,Outside station-wise IQR screening limits
+CPCB-CHEM-234-pH,sample_observation,pH,8.5,,timestamp,BEAS AT U/S PATHANKOT PUNJAB,CPCB,dimensionless,7.3625,8.462500000000002,True,Outside station-wise IQR screening limits
+CPCB-CHEM-249-pH,sample_observation,pH,7.44,,timestamp,BEAS D/S NADAUN BRIDGE VILL BHADOLI,CPCB,dimensionless,7.7437499999999995,8.23375,True,Outside station-wise IQR screening limits
+CPCB-CHEM-886-pH,sample_observation,pH,8.27,,timestamp,RIVER BEAS AT RAISON,CPCB,dimensionless,7.063750000000001,8.093749999999998,True,Outside station-wise IQR screening limits
+CPCB-CHEM-891-pH,sample_observation,pH,6.96,,timestamp,RIVER BEAS AT RAISON,CPCB,dimensionless,7.063750000000001,8.093749999999998,True,Outside station-wise IQR screening limits
+CPCB-CHEM-901-pH,sample_observation,pH,6.86,,timestamp,RIVER BEAS D/S MANALSU NALLAH,CPCB,dimensionless,7.021249999999999,8.05125,True,Outside station-wise IQR screening limits
+HPSPCB-MONTHLY-708,monthly_observation,pH,8.45,2022-01-15,month_only_day_15_is_placeholder,"R.Beas, U/s Kullu",HPSPCB,dimensionless,6.772500000000001,8.3525,True,Outside station-wise IQR screening limits
+HPSPCB-MONTHLY-461,monthly_observation,pH,6.88,2021-04-15,month_only_day_15_is_placeholder,"R.Beas, U/s Pandoh Dam",HPSPCB,dimensionless,6.945,8.265,True,Outside station-wise IQR screening limits
+HPSPCB-MONTHLY-469,monthly_observation,pH,8.68,2021-05-15,month_only_day_15_is_placeholder,"R.Beas, U/s Pandoh Dam",HPSPCB,dimensionless,6.945,8.265,True,Outside station-wise IQR screening limits

@@ -1,0 +1,68 @@
+source_file,source_type,parameter,unit,beas_station_rows,numeric_measurements_or_range_cells,status,notes
+RiverWaterQualityOverYears_PreprocessedData.csv,annual min/max ranges,Temperature,°C,318,636,numeric Beas values found,Source agency/URL absent from uploaded file; quality flags must be reviewed.
+RiverWaterQualityOverYears_PreprocessedData.csv,annual min/max ranges,Dissolved Oxygen,mg/L,318,636,numeric Beas values found,Source agency/URL absent from uploaded file; quality flags must be reviewed.
+RiverWaterQualityOverYears_PreprocessedData.csv,annual min/max ranges,pH,dimensionless,318,636,numeric Beas values found,Source agency/URL absent from uploaded file; quality flags must be reviewed.
+RiverWaterQualityOverYears_PreprocessedData.csv,annual min/max ranges,Conductivity,µmho/cm,318,636,numeric Beas values found,Source agency/URL absent from uploaded file; quality flags must be reviewed.
+RiverWaterQualityOverYears_PreprocessedData.csv,annual min/max ranges,Biochemical Oxygen Demand,mg/L,318,636,numeric Beas values found,Source agency/URL absent from uploaded file; quality flags must be reviewed.
+RiverWaterQualityOverYears_PreprocessedData.csv,annual min/max ranges,Nitrate-N,mg/L,318,636,numeric Beas values found,Source agency/URL absent from uploaded file; quality flags must be reviewed.
+RiverWaterQualityOverYears_PreprocessedData.csv,annual min/max ranges,Fecal Coliform,MPN/100mL,318,636,numeric Beas values found,Source agency/URL absent from uploaded file; quality flags must be reviewed.
+RiverWaterQualityOverYears_PreprocessedData.csv,annual min/max ranges,Total Coliform,MPN/100mL,318,636,numeric Beas values found,Source agency/URL absent from uploaded file; quality flags must be reviewed.
+RiverWaterQualityOverYears_PreprocessedData.csv,annual min/max ranges,Fecal Streptococci,MPN/100mL,318,636,numeric Beas values found,Source agency/URL absent from uploaded file; quality flags must be reviewed.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Dissolved Oxygen,mg/L,258,252,numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,pH,dimensionless,258,252,numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Ammonia-N,mgN/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Boron,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Carbonate,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Calcium,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Chloride,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Total Dissolved Solids,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Fluoride,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Bicarbonate,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Potassium,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Magnesium,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Sodium,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Nitrite-N + Nitrate-N,mgN/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Sulphate,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Total Phosphorus,mgP/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Arsenic,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Total Alkalinity,mg/L as CaCO3,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Cadmium,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Chromium,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Iron,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Calcium Hardness,mgCaCO3/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Mercury,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Magnesium Hardness,mg/L as CaCO3,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Total Hardness,mgCaCO3/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Manganese,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Nitrate-N,mgN/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Nickel,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Lead,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Zinc,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Sodium Adsorption Ratio,%,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Nitrate,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_chemical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Copper,mg/L,258,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_biological_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Biochemical Oxygen Demand,mg/L,254,19,numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_biological_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Chemical Oxygen Demand,mg/L,254,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_biological_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Fecal Coliform,MPN/100mL,254,248,numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_biological_parameter_manual_cpcb_hp_2021_2025.csv,CPCB sample observations,Total Coliform,MPN/100mL,254,0,no numeric Beas values found,Beas station rows selected by station name; source URL not embedded.
+swq_physical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB physical observations,Conductivity,μS/cm,69,0,no numeric Beas values found,No numeric Beas values in uploaded physical file.
+swq_physical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB physical observations,Colour,text,69,0,no numeric Beas values found,No numeric Beas values in uploaded physical file.
+swq_physical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB physical observations,Odour,text,69,0,no numeric Beas values found,No numeric Beas values in uploaded physical file.
+swq_physical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB physical observations,Turbidity,NTU,69,0,no numeric Beas values found,No numeric Beas values in uploaded physical file.
+swq_physical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB physical observations,Temperature,°C,69,0,no numeric Beas values found,No numeric Beas values in uploaded physical file.
+swq_physical_parameter_manual_cpcb_hp_2021_2025.csv,CPCB physical observations,Total Solids,mg/L,69,0,no numeric Beas values found,No numeric Beas values in uploaded physical file.
+swq_physical_parameter_manual_cwc_hp_2021_2025.csv,CWC physical observations,physical parameters (see source columns),varies,0,0,no numeric Beas values found,No Beas references found anywhere in this uploaded CWC file; excluded from master.
+swq_physical_cwc_hp_1961_2020.csv,CWC physical observations,physical parameters (see source columns),varies,0,0,no numeric Beas values found,No Beas references found anywhere in this uploaded CWC file; excluded from master.
+beas_hppcb_monthly_observations_2021_22.csv (prior ZIP),HPSPCB monthly observations,Biochemical Oxygen Demand,mg/L,6,72,numeric Beas values found,"Day 15 in date field is a month placeholder, not actual sample day."
+beas_hppcb_monthly_observations_2021_22.csv (prior ZIP),HPSPCB monthly observations,Dissolved Oxygen,mg/L,6,72,numeric Beas values found,"Day 15 in date field is a month placeholder, not actual sample day."
+beas_hppcb_monthly_observations_2021_22.csv (prior ZIP),HPSPCB monthly observations,Total Coliform,MPN/100mL,6,72,numeric Beas values found,"Day 15 in date field is a month placeholder, not actual sample day."
+beas_hppcb_monthly_observations_2021_22.csv (prior ZIP),HPSPCB monthly observations,pH,dimensionless,6,72,numeric Beas values found,"Day 15 in date field is a month placeholder, not actual sample day."
+beas_cpcb_annual_ranges_2022_2023.csv (prior ZIP),CPCB annual PDF transcription,Biochemical Oxygen Demand,mg/L,27,68,numeric Beas values found,Transcribed from CPCB annual PDF; cross-source conflicts flagged for verification.
+beas_cpcb_annual_ranges_2022_2023.csv (prior ZIP),CPCB annual PDF transcription,Conductivity,µmho/cm,27,102,numeric Beas values found,Transcribed from CPCB annual PDF; cross-source conflicts flagged for verification.
+beas_cpcb_annual_ranges_2022_2023.csv (prior ZIP),CPCB annual PDF transcription,Dissolved Oxygen,mg/L,27,102,numeric Beas values found,Transcribed from CPCB annual PDF; cross-source conflicts flagged for verification.
+beas_cpcb_annual_ranges_2022_2023.csv (prior ZIP),CPCB annual PDF transcription,Fecal Coliform,MPN/100mL,27,102,numeric Beas values found,Transcribed from CPCB annual PDF; cross-source conflicts flagged for verification.
+beas_cpcb_annual_ranges_2022_2023.csv (prior ZIP),CPCB annual PDF transcription,Fecal Streptococci,MPN/100mL,27,54,numeric Beas values found,Transcribed from CPCB annual PDF; cross-source conflicts flagged for verification.
+beas_cpcb_annual_ranges_2022_2023.csv (prior ZIP),CPCB annual PDF transcription,Nitrate-N,mg/L,27,93,numeric Beas values found,Transcribed from CPCB annual PDF; cross-source conflicts flagged for verification.
+beas_cpcb_annual_ranges_2022_2023.csv (prior ZIP),CPCB annual PDF transcription,Temperature,°C,27,102,numeric Beas values found,Transcribed from CPCB annual PDF; cross-source conflicts flagged for verification.
+beas_cpcb_annual_ranges_2022_2023.csv (prior ZIP),CPCB annual PDF transcription,Total Coliform,MPN/100mL,27,102,numeric Beas values found,Transcribed from CPCB annual PDF; cross-source conflicts flagged for verification.
+beas_cpcb_annual_ranges_2022_2023.csv (prior ZIP),CPCB annual PDF transcription,pH,dimensionless,27,102,numeric Beas values found,Transcribed from CPCB annual PDF; cross-source conflicts flagged for verification.

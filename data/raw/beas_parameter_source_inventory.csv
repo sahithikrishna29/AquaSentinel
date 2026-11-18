@@ -1,0 +1,18 @@
+parameter,verified_beas_values_found,source_or_status,notes
+pH,Yes,CPCB annual reports 2022-2023; HPSPCB monthly 2021-22; CPCB chemical CSV,Station-year ranges and monthly values
+DO,Yes,CPCB annual reports 2022-2023; HPSPCB monthly 2021-22; CPCB chemical CSV,Station-year ranges and monthly values
+BOD,Yes,CPCB annual reports 2022-2023; HPSPCB monthly 2021-22; CPCB biological CSV,Station-year ranges and monthly values
+COD,Not confirmed for Beas in inspected files,"CPCB/CWC biological datasets include COD field, but Beas values were not verified",Keep blank until source rows validated
+Turbidity,Not populated in inspected Beas CPCB/CWC physical rows,"CPCB/CWC physical datasets contain field, but prior inspected Beas records had no values",Keep blank
+Conductivity,Yes,CPCB annual reports 2022-2023,Annual station ranges; physical CSVs also have a field
+Temperature,Yes,CPCB annual reports 2022-2023,Annual station ranges
+TDS,Not confirmed for Beas in inspected records,CPCB/CWC chemical datasets contain TDS field; Beas valid values not confirmed,Keep blank until checked
+Total Solids,Not confirmed for Beas in inspected physical rows,CPCB/CWC physical datasets contain field; prior Beas rows had no values,Do not equate to TDS
+Nitrate-N,Yes,CPCB annual reports 2022-2023,Annual station ranges
+Fecal Coliform,Yes,CPCB annual reports 2022-2023; CPCB biological CSV,Annual station ranges and sparse raw observations
+Total Coliform,Yes,CPCB annual reports 2022-2023; HPSPCB monthly 2021-22,Annual ranges and monthly values
+Fecal Streptococci,Yes,CPCB annual reports 2022-2023,Annual ranges
+Chloride,Not confirmed for Beas,CPCB/CWC chemical datasets contain field; Beas values not verified,Keep blank
+Fluoride,Not confirmed for Beas,CPCB/CWC chemical datasets contain field; Beas values not verified,Keep blank
+Sulfate,Not confirmed for Beas,CPCB/CWC chemical datasets contain field; Beas values not verified,Keep blank
+Iron / heavy metals,Not confirmed for Beas,CPCB/CWC chemical datasets contain fields; Beas values not verified,Keep blank

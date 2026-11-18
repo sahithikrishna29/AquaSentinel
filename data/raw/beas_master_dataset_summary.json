@@ -1,0 +1,43 @@
+{
+  "master_records": 4380,
+  "record_types": {
+    "annual_min_max_range": 3321,
+    "sample_observation": 771,
+    "monthly_observation": 288
+  },
+  "unique_parameters": 9,
+  "parameters": [
+    "Biochemical Oxygen Demand",
+    "Conductivity",
+    "Dissolved Oxygen",
+    "Fecal Coliform",
+    "Fecal Streptococci",
+    "Nitrate-N",
+    "Temperature",
+    "Total Coliform",
+    "pH"
+  ],
+  "historical_beas_station_year_rows": 318,
+  "historical_years": [
+    2012,
+    2013,
+    2014,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "CPCB_chemical_Beas_station_rows": 258,
+  "CPCB_biological_Beas_station_rows": 254,
+  "CPCB_physical_Beas_station_rows": 69,
+  "CWC_recent_Beas_rows": 0,
+  "CWC_old_Beas_rows": 0,
+  "historical_invalid_min_gt_max_flags": 20,
+  "annual_range_discrepancy_records": 72,
+  "synthetic_values_created": 0,
+  "historical_duplicate_station_year_flagged_records": 126,
+  "exact_annual_range_matches_with_previous_CPCB_transcription": 387
+}

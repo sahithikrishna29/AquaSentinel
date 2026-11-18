@@ -1,0 +1,14 @@
+record_type,parameter,unit,record_count
+annual_min_max_range,Biochemical Oxygen Demand,mg/L,51
+annual_min_max_range,Conductivity,µmho/cm,51
+annual_min_max_range,Dissolved Oxygen,mg/L,51
+annual_min_max_range,Fecal Coliform,MPN/100mL,51
+annual_min_max_range,Fecal Streptococci,MPN/100mL,51
+annual_min_max_range,Nitrate-N,mg/L,51
+annual_min_max_range,Temperature,°C,51
+annual_min_max_range,Total Coliform,MPN/100mL,51
+annual_min_max_range,pH,dimensionless,51
+monthly_observation,Biochemical Oxygen Demand,mg/L,72
+monthly_observation,Dissolved Oxygen,mg/L,72
+monthly_observation,Total Coliform,MPN/100mL,72
+monthly_observation,pH,dimensionless,72

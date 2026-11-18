@@ -1,0 +1,95 @@
+source_file,source_row_index,station_name,station_code,year,parameter,min_value,max_value,issue
+RiverWaterQualityOverYears_PreprocessedData.csv,1615.0,RIVER BEAS AT U/S MANALI,1001,2022,Temperature,18.95,17.0,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,1621.0,"RIVER BEAS D/S OF
+ WASTE PROCESSING FACILITY AT KULLU",4445,2022,Temperature,18.95,17.0,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,1622.0,RIVER BEAS D/S KULLU,1002,2022,Temperature,18.95,17.0,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,1713.0,"RIVER PARVATI BEFORE CONF. TO
+ RIVER BEAS AT BHUNTER",1290,2022,Temperature,18.95,17.0,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,4366.0,PARVATI BEFORE CONF. TO RIVER BEAS,1290,2017,Dissolved Oxygen,8.7,5.8,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,6220.0,BEAS AT U/S KULLU,2602,2012,Temperature,18.95,17.5,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,6433.0,BEAS AT U/S KULLU,2602,2014,Temperature,18.95,17.5,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,6935.0,"BEAS AT EXIT OF TUNNEL DEHAL POWER HOUSE, H.P.",1005,2013,Dissolved Oxygen,8.9,8.098157636,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,7620.0,BEAS AT U/S KULLU,2602,2020,Temperature,18.95,18.0,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,7622.0,BEAS AT D/S KULU,1002,2020,Temperature,18.95,18.0,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,7641.0,"BEAS AT TALWARA H/W, PUNJAB",1693,2020,Nitrate-N,1.142611276,0.7,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,7648.0,BEAS AT 100M D/S INDUST. DISCH. GOINDWAL,1012,2020,Nitrate-N,1.142611276,0.7,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,7649.0,"BEAS U/S GOINDWAL, PUNJAB",1696,2020,Nitrate-N,1.142611276,0.7,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,7650.0,"BEAS AT HARIKE, PUNJAB",1697,2020,Nitrate-N,1.142611276,0.8,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,8792.0,BEAS AT U/S KULLU,2602,2019,Temperature,18.95,18.0,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,8794.0,BEAS AT D/S KULU,1002,2019,Temperature,18.95,18.0,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,8813.0,"BEAS AT TALWARA H/W, PUNJAB",1693,2019,Nitrate-N,1.142611276,0.7,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,8820.0,BEAS AT 100M D/S INDUST. DISCH. GOINDWAL,1012,2019,Nitrate-N,1.142611276,0.7,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,8821.0,"BEAS U/S GOINDWAL, PUNJAB",1696,2019,Nitrate-N,1.142611276,0.7,minimum_greater_than_maximum; verify against original source
+RiverWaterQualityOverYears_PreprocessedData.csv,8822.0,"BEAS AT HARIKE, PUNJAB",1697,2019,Nitrate-N,1.142611276,0.8,minimum_greater_than_maximum; verify against original source
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at U/S Manali,1001,2022,Temperature,2.0,17.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at U/S Manali,1001,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at U/S Manali,1001,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Manali,2601,2022,Temperature,2.0,10.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Manali,2601,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S of Waste Processing Facility at Manali,4444,2022,Temperature,2.0,10.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S of Waste Processing Facility at Manali,4444,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Manalsu Nallah,4037,2022,Temperature,2.0,9.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Manalsu Nallah,4037,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Manalsu Nallah,4037,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S before confluence of Manalsu Nallah,3866,2022,Temperature,1.0,8.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S before confluence of Manalsu Nallah,3866,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S before confluence of Manalsu Nallah,3866,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S Kullu,2602,2022,Temperature,3.0,11.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S Kullu,2602,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S Kullu,2602,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S of Waste Processing Facility at Kullu,4445,2022,Temperature,4.0,17.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S of Waste Processing Facility at Kullu,4445,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Kullu,1002,2022,Temperature,4.0,17.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Kullu,1002,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Aut,1003,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Aut,1003,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Pandoh Dam,2603,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Pandoh Dam,2603,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at Exit of Dehar Power House,1005,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at Exit of Dehar Power House,1005,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,Beas River U/S of Mandi Town,1550,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,Beas River U/S of Mandi Town,1550,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Mandi Town,1006,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Jaisinghpur,2604,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Jaisinghpur,2604,2022,Nitrate-N,,6.98,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Jaisinghpur,2604,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Alampur,1007,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Alampur,1007,2022,Nitrate-N,,6.27,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Alampur,1007,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,"River Beas D/S Nadaun Bridge, Vill Bhadoli",3855,2022,Nitrate-N,,5.12,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,"River Beas D/S Nadaun Bridge, Vill Bhadoli",3855,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Pong Dam,1009,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Pong Dam,1009,2022,Nitrate-N,,6.95,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Pong Dam,1009,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Dehragopipur,1008,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Dehragopipur,1008,2022,Nitrate-N,,8.56,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Dehragopipur,1008,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S Sujanpur Tihra,4435,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S Sujanpur Tihra,4435,2022,Nitrate-N,,4.46,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S Sujanpur Tihra,4435,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Sujanpur Tihra,4436,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Sujanpur Tihra,4436,2022,Nitrate-N,,6.19,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Sujanpur Tihra,4436,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S Nadaun Town,4437,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S Nadaun Town,4437,2022,Nitrate-N,,4.21,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S Nadaun Town,4437,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Nadaun Town after confluence of Maan Khad,4438,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Nadaun Town after confluence of Maan Khad,4438,2022,Nitrate-N,,5.28,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Nadaun Town after confluence of Maan Khad,4438,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at Raison,4443,2022,Temperature,4.0,10.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at Raison,4443,2022,Biochemical Oxygen Demand,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at Raison,4443,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at Talwara (Pong Dam),30083,2022,Fecal Streptococci,,,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at U/S Manali,1001,2023,Temperature,2.0,24.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at D/S Manali,2601,2023,Temperature,2.0,13.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S of Waste Processing Facility at Manali,4444,2023,Temperature,2.0,13.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Manalsu Nallah,4037,2023,Temperature,2.0,14.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S before confluence of Manalsu Nallah,3866,2023,Temperature,2.0,13.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S Kullu,2602,2023,Temperature,4.0,16.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S of Waste Processing Facility at Kullu,4445,2023,Temperature,4.0,16.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Kullu,1002,2023,Temperature,4.0,16.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S Aut,1003,2023,Temperature,5.0,16.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas U/S Nadaun Town,4437,2023,Conductivity,241.0,304.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at Raison,4443,2023,Temperature,3.0,15.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas D/S New Bajaura Bridge,5765,2023,Temperature,4.0,16.0,range differs from user-uploaded historical preprocessed file; verify both sources
+beas_cpcb_annual_ranges_2022_2023.csv (inside prior ZIP),,River Beas at Talwara (Pong Dam),30083,2023,Fecal Coliform,11.0,380.0,range differs from user-uploaded historical preprocessed file; verify both sources

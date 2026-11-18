@@ -1,0 +1,35 @@
+{
+  "annual_range_records": 459,
+  "annual_station_years": 51,
+  "annual_stations": 27,
+  "monthly_observation_records": 288,
+  "monthly_stations": 6,
+  "monthly_dates": 12,
+  "combined_records": 747,
+  "synthetic_rows": 0,
+  "annual_years": [
+    2022,
+    2023
+  ],
+  "monthly_period": [
+    "2021-04",
+    "2022-03"
+  ],
+  "parameter_coverage_annual": [
+    "Biochemical Oxygen Demand",
+    "Conductivity",
+    "Dissolved Oxygen",
+    "Fecal Coliform",
+    "Fecal Streptococci",
+    "Nitrate-N",
+    "Temperature",
+    "Total Coliform",
+    "pH"
+  ],
+  "parameter_coverage_monthly": [
+    "BOD",
+    "DO",
+    "Total Coliform",
+    "pH"
+  ]
+}
