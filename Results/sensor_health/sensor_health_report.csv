@@ -1,0 +1,55 @@
+station_name,parameter,total_records,missing_readings,invalid_readings,repeated_values,date_gaps_over_60_days
+BEAS AT D/S AUT,pH,12,0,0,0,0
+BEAS AT D/S DEHRAGOPIPUR,pH,12,0,0,2,0
+BEAS AT D/S KULU,pH,12,0,0,2,0
+BEAS AT D/S MANALI,pH,12,0,0,0,0
+BEAS AT D/S MANDI,pH,12,0,0,0,0
+BEAS AT D/S PANDOH DAM,pH,12,0,0,4,0
+BEAS AT D/S PONG DAM,pH,12,0,0,4,0
+BEAS AT EXIT OF TUNNEL DEHAL POWER HOUSE,pH,12,0,0,4,0
+BEAS AT TALWARA H/W PUNJAB,pH,12,0,0,7,0
+BEAS AT U/S KULLU,pH,12,0,0,2,0
+BEAS AT U/S MANALI,pH,12,0,0,2,0
+BEAS AT U/S PANDON DAM,pH,12,0,0,4,0
+BEAS AT U/S PATHANKOT PUNJAB,pH,12,0,0,8,0
+BEAS D/S NADAUN BRIDGE VILL BHADOLI,pH,12,0,0,4,0
+BEAS U/S MANDI,pH,12,0,0,0,0
+MANALSU NALLAH BEFORE CONFLUENCE TO RIVER BEAS,pH,12,0,0,0,0
+PARVATI BEFORE CONF. TO RIVER BEAS,pH,12,0,0,0,0
+R.Beas at Raison,pH,12,0,0,4,0
+"R.Beas, D/s Aut",pH,12,0,0,2,0
+"R.Beas, D/s Manalsu Nalla",pH,12,0,0,0,0
+"R.Beas, U/s Kullu",pH,12,0,0,4,0
+"R.Beas, U/s Manali",pH,12,0,0,0,0
+"R.Beas, U/s Pandoh Dam",pH,12,0,0,2,0
+RIVER BEAS AT RAISON,pH,12,0,0,2,0
+RIVER BEAS D/S MANALSU NALLAH,pH,12,0,0,0,0
+RIVER BEAS D/S OF WPF AT KULLU,pH,12,0,0,2,0
+RIVER BEAS D/S OF WPF AT MANALI,pH,12,0,0,0,0
+BEAS AT D/S AUT,Dissolved Oxygen,12,0,0,7,0
+BEAS AT D/S DEHRAGOPIPUR,Dissolved Oxygen,12,0,0,8,0
+BEAS AT D/S KULU,Dissolved Oxygen,12,0,0,9,0
+BEAS AT D/S MANALI,Dissolved Oxygen,12,0,0,2,0
+BEAS AT D/S MANDI,Dissolved Oxygen,12,0,0,4,0
+BEAS AT D/S PANDOH DAM,Dissolved Oxygen,12,0,0,4,0
+BEAS AT D/S PONG DAM,Dissolved Oxygen,12,0,0,10,0
+BEAS AT EXIT OF TUNNEL DEHAL POWER HOUSE,Dissolved Oxygen,12,0,0,6,0
+BEAS AT TALWARA H/W PUNJAB,Dissolved Oxygen,12,0,0,7,0
+BEAS AT U/S KULLU,Dissolved Oxygen,12,0,0,7,0
+BEAS AT U/S MANALI,Dissolved Oxygen,12,0,0,5,0
+BEAS AT U/S PANDON DAM,Dissolved Oxygen,12,0,0,3,0
+BEAS AT U/S PATHANKOT PUNJAB,Dissolved Oxygen,12,0,0,3,0
+BEAS D/S NADAUN BRIDGE VILL BHADOLI,Dissolved Oxygen,12,0,0,7,0
+BEAS U/S MANDI,Dissolved Oxygen,12,0,0,7,0
+MANALSU NALLAH BEFORE CONFLUENCE TO RIVER BEAS,Dissolved Oxygen,12,0,0,7,0
+PARVATI BEFORE CONF. TO RIVER BEAS,Dissolved Oxygen,12,0,0,6,0
+R.Beas at Raison,Dissolved Oxygen,12,0,0,4,0
+"R.Beas, D/s Aut",Dissolved Oxygen,12,0,0,5,0
+"R.Beas, D/s Manalsu Nalla",Dissolved Oxygen,12,0,0,6,0
+"R.Beas, U/s Kullu",Dissolved Oxygen,12,0,0,7,0
+"R.Beas, U/s Manali",Dissolved Oxygen,12,0,0,6,0
+"R.Beas, U/s Pandoh Dam",Dissolved Oxygen,12,0,0,2,0
+RIVER BEAS AT RAISON,Dissolved Oxygen,12,0,0,5,0
+RIVER BEAS D/S MANALSU NALLAH,Dissolved Oxygen,12,0,0,6,0
+RIVER BEAS D/S OF WPF AT KULLU,Dissolved Oxygen,12,0,0,7,0
+RIVER BEAS D/S OF WPF AT MANALI,Dissolved Oxygen,12,0,0,4,0
