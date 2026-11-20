@@ -1,0 +1,13 @@
+feature,mean_absolute_shap
+Nitrate N (mg/L) Max,0.15924825233595152
+Dissolved Oxygen (mg/L) Min,0.11815239524420797
+Dissolved Oxygen (mg/L) Max,0.041977927173514715
+pH Max,0.03975703224210242
+BOD (mg/L) Max,0.03901023275460291
+Conductivity (µmho/cm) Min,0.032126242410487886
+Nitrate N (mg/L) Min,0.0234499981370516
+BOD (mg/L) Min,0.02093831191270136
+Conductivity (µmho/cm) Max,0.012689458803966183
+pH Min,0.008628062220717181
+Temperature (°C) Max,0.00803753699821666
+Temperature (°C) Min,0.006200501017919314
