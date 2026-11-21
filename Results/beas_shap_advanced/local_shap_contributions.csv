@@ -1,0 +1,25 @@
+observation_type,source_row_index,actual_class,predicted_class,contamination_probability,feature,feature_value,shap_value_class_1,impact_direction
+contaminated,6214,1,1,0.990085,Nitrate N (mg/L) Max,4.9,0.14454440508450017,Increases contamination output
+contaminated,6214,1,1,0.990085,Dissolved Oxygen (mg/L) Min,6.1,0.0852342867764174,Increases contamination output
+contaminated,6214,1,1,0.990085,Dissolved Oxygen (mg/L) Max,6.8,0.08367482613680358,Increases contamination output
+contaminated,6214,1,1,0.990085,Conductivity (µmho/cm) Min,260.0,0.0721294413425785,Increases contamination output
+contaminated,6214,1,1,0.990085,BOD (mg/L) Max,2.7,0.07143410507418371,Increases contamination output
+contaminated,6214,1,1,0.990085,BOD (mg/L) Min,1.8,0.023225743014556658,Increases contamination output
+contaminated,6214,1,1,0.990085,Nitrate N (mg/L) Min,0.32,0.016356757973454428,Increases contamination output
+contaminated,6214,1,1,0.990085,pH Min,7.1,0.005246889563344553,Increases contamination output
+contaminated,6214,1,1,0.990085,Temperature (°C) Max,23.0,0.0017244420116356832,Increases contamination output
+contaminated,6214,1,1,0.990085,Temperature (°C) Min,11.0,0.0005156495304868043,Increases contamination output
+contaminated,6214,1,1,0.990085,pH Max,7.6,-0.006496991329844876,Decreases contamination output
+contaminated,6214,1,1,0.990085,Conductivity (µmho/cm) Max,290.0,-0.006813167367394631,Decreases contamination output
+non_contaminated,7621,0,0,0.000909,Nitrate N (mg/L) Min,0.3864202128,0.0031499722626642398,Increases contamination output
+non_contaminated,7621,0,0,0.000909,Temperature (°C) Max,20.0,-0.004325456119741943,Decreases contamination output
+non_contaminated,7621,0,0,0.000909,pH Min,7.3,-0.010122926783462905,Decreases contamination output
+non_contaminated,7621,0,0,0.000909,Temperature (°C) Min,18.95,-0.011395331336070324,Decreases contamination output
+non_contaminated,7621,0,0,0.000909,Conductivity (µmho/cm) Max,139.0,-0.012535117161249032,Decreases contamination output
+non_contaminated,7621,0,0,0.000909,BOD (mg/L) Min,0.6432989691,-0.015201988115279164,Decreases contamination output
+non_contaminated,7621,0,0,0.000909,Dissolved Oxygen (mg/L) Max,10.2,-0.031096225730324435,Decreases contamination output
+non_contaminated,7621,0,0,0.000909,pH Max,7.9,-0.03143292919863805,Decreases contamination output
+non_contaminated,7621,0,0,0.000909,BOD (mg/L) Max,1.0,-0.03343718454260624,Decreases contamination output
+non_contaminated,7621,0,0,0.000909,Conductivity (µmho/cm) Min,60.0,-0.03576132261649465,Decreases contamination output
+non_contaminated,7621,0,0,0.000909,Nitrate N (mg/L) Max,1.16,-0.1493645650524666,Decreases contamination output
+non_contaminated,7621,0,0,0.000909,Dissolved Oxygen (mg/L) Min,8.5,-0.1668759963005098,Decreases contamination output
