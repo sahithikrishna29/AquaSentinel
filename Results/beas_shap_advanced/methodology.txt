@@ -1,0 +1,12 @@
+BEAS RIVER - ADVANCED LOCAL SHAP EXPLAINABILITY
+============================================================
+Valid Beas observations: 318
+Features: 12
+Non-contaminated observations: 293
+Contaminated observations: 25
+Model: Existing trained RandomForestClassifier
+Explainer: SHAP TreeExplainer
+Explained output: Class 1 (contaminated)
+
+IMPORTANT METHODOLOGICAL LIMITATION:
+The existing model was fitted on the Beas observations by the original training pipeline. These local explanations are explanations of that fitted model on its training observations, not independent test-set explanations.
