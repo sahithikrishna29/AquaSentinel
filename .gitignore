@@ -57,3 +57,5 @@ data.zip
 sample.arff
 aquasentinel_beas_synthetic_training.csv
 Water_Quality_Dashboard_Colab.ipynb
+
+.venv-beas-test/

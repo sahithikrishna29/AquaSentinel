@@ -16,7 +16,10 @@ st.set_page_config(
 )
 
 BASE_DIR = Path(__file__).resolve().parent
-API_BASE_URL = "http://127.0.0.1:8000"
+
+# Updated API URL: Beas-integrated FastAPI server
+API_BASE_URL = "http://127.0.0.1:8002"
+
 RESULTS_DIR = BASE_DIR / "Results"
 
 ANOMALY_FILE = (
@@ -59,6 +62,7 @@ def load_csv(file_path):
 
     try:
         return pd.read_csv(file_path)
+
     except Exception as error:
         st.error(
             f"Unable to read {file_path.name}: {error}"
@@ -74,7 +78,9 @@ def check_api_health():
             f"{API_BASE_URL}/health",
             timeout=5
         )
+
         response.raise_for_status()
+
         return response.json()
 
     except requests.exceptions.RequestException:
@@ -87,10 +93,13 @@ def display_api_status():
     health = check_api_health()
 
     if health is None:
+
         st.sidebar.error("FastAPI: Disconnected")
+
         st.sidebar.caption(
-            "Start the FastAPI server on port 8000."
+            "Start the FastAPI server on port 8002."
         )
+
         return
 
     st.sidebar.success("FastAPI: Connected")
@@ -312,6 +321,7 @@ elif page == "Water Quality Prediction":
                 )
 
                 response.raise_for_status()
+
                 result = response.json()
 
             st.success(
@@ -337,6 +347,7 @@ elif page == "Water Quality Prediction":
             )
 
             if confidence is not None:
+
                 st.metric(
                     "Classification Confidence",
                     f"{float(confidence) * 100:.2f}%"
@@ -365,6 +376,8 @@ elif page == "Water Quality Prediction":
                     use_container_width=True
                 )
 
+            # BEAS ANOMALY RESULT
+
             st.subheader("Beas River Anomaly Detection")
 
             anomaly = result.get(
@@ -382,17 +395,33 @@ elif page == "Water Quality Prediction":
                     "Unusual water quality observation detected!"
                 )
 
+                st.metric(
+                    "Anomaly Score",
+                    anomaly.get("anomaly_score", "N/A")
+                )
+
             elif anomaly_status == "NORMAL":
 
                 st.success(
                     "No anomaly detected by the model."
                 )
 
-            else:
+                st.metric(
+                    "Anomaly Score",
+                    anomaly.get("anomaly_score", "N/A")
+                )
+
+            elif anomaly_status == "NOT_AVAILABLE":
 
                 st.warning(
                     "Anomaly detection is unavailable "
                     "for this reading."
+                )
+
+            else:
+
+                st.warning(
+                    f"Anomaly detection status: {anomaly_status}"
                 )
 
             st.json(anomaly)
@@ -417,7 +446,7 @@ elif page == "Water Quality Prediction":
 
             st.info(
                 "Make sure FastAPI is running at "
-                "http://127.0.0.1:8000."
+                "http://127.0.0.1:8002."
             )
 
         except (ValueError, TypeError) as error:
@@ -641,6 +670,7 @@ elif page == "Forecasting":
     )
 
     forecast_df = load_csv(FORECAST_FILE)
+
     evaluation_df = load_csv(EVALUATION_FILE)
 
     if forecast_df is not None:
