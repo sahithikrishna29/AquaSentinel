@@ -17,9 +17,7 @@ st.set_page_config(
 
 BASE_DIR = Path(__file__).resolve().parent
 
-# Updated API URL: Beas-integrated FastAPI server
 API_BASE_URL = "http://127.0.0.1:8002"
-
 RESULTS_DIR = BASE_DIR / "Results"
 
 ANOMALY_FILE = (
@@ -62,11 +60,8 @@ def load_csv(file_path):
 
     try:
         return pd.read_csv(file_path)
-
     except Exception as error:
-        st.error(
-            f"Unable to read {file_path.name}: {error}"
-        )
+        st.error(f"Unable to read {file_path.name}: {error}")
         return None
 
 
@@ -78,9 +73,7 @@ def check_api_health():
             f"{API_BASE_URL}/health",
             timeout=5
         )
-
         response.raise_for_status()
-
         return response.json()
 
     except requests.exceptions.RequestException:
@@ -88,18 +81,15 @@ def check_api_health():
 
 
 def display_api_status():
-    """Display backend connection status."""
+    """Display the status of all API models."""
 
     health = check_api_health()
 
     if health is None:
-
         st.sidebar.error("FastAPI: Disconnected")
-
         st.sidebar.caption(
-            "Start the FastAPI server on port 8002."
+            "Start FastAPI on port 8002."
         )
-
         return
 
     st.sidebar.success("FastAPI: Connected")
@@ -108,15 +98,77 @@ def display_api_status():
 
     st.sidebar.write(
         "Classifier:",
-        "Loaded" if models.get("classifier")
-        else "Unavailable"
+        "Loaded" if models.get("classifier") else "Unavailable"
+    )
+
+    st.sidebar.write(
+        "General anomaly detector:",
+        "Loaded"
+        if models.get("general_anomaly_detector")
+        else "Not available"
     )
 
     st.sidebar.write(
         "Beas anomaly detector:",
-        "Loaded" if models.get("anomaly_detector")
+        "Loaded"
+        if models.get("beas_anomaly_detector")
         else "Unavailable"
     )
+
+
+def display_anomaly_result(
+    title,
+    anomaly,
+    detector_name
+):
+    """Display an anomaly detection result safely."""
+
+    st.subheader(title)
+
+    if not isinstance(anomaly, dict):
+        anomaly = {}
+
+    status = anomaly.get("status", "NOT_AVAILABLE")
+
+    if status == "ANOMALY":
+        st.error(
+            f"{detector_name} detected an unusual observation."
+        )
+
+    elif status == "NORMAL":
+        st.success(
+            f"No anomaly detected by {detector_name}."
+        )
+
+    elif status == "NOT_AVAILABLE":
+        st.warning(
+            f"{detector_name} is currently unavailable. "
+            "Its compatible trained model and metadata "
+            "are not available."
+        )
+
+    elif status == "ERROR":
+        st.error(
+            f"{detector_name} returned an error."
+        )
+
+    else:
+        st.warning(
+            f"{detector_name} status: {status}"
+        )
+
+    score = anomaly.get("anomaly_score")
+
+    if score is not None:
+        st.metric("Anomaly Score", f"{float(score):.4f}")
+
+    if anomaly.get("message"):
+        st.info(anomaly["message"])
+
+    if anomaly.get("error"):
+        st.caption(f"Technical details: {anomaly['error']}")
+
+    st.json(anomaly)
 
 
 # ============================================================
@@ -184,6 +236,7 @@ if page == "Overview":
         **System capabilities**
 
         - Water quality classification
+        - General water quality anomaly detection pathway
         - Beas River pH and Dissolved Oxygen anomaly detection
         - Water quality forecasting results
         - Sensor health monitoring
@@ -203,7 +256,7 @@ elif page == "Water Quality Prediction":
 
     st.write(
         "Enter sensor readings to perform water quality "
-        "classification and Beas anomaly detection."
+        "classification and anomaly detection."
     )
 
     with st.form("prediction_form"):
@@ -290,7 +343,7 @@ elif page == "Water Quality Prediction":
 
         submitted = st.form_submit_button(
             "Predict Water Quality",
-            use_container_width=True
+            width="stretch"
         )
 
     if submitted:
@@ -321,12 +374,13 @@ elif page == "Water Quality Prediction":
                 )
 
                 response.raise_for_status()
-
                 result = response.json()
 
             st.success(
                 "Prediction completed successfully!"
             )
+
+            # WATER QUALITY CLASSIFICATION
 
             st.subheader("Water Quality Classification")
 
@@ -373,58 +427,34 @@ elif page == "Water Quality Prediction":
 
                 st.dataframe(
                     probability_df,
-                    use_container_width=True
+                    width="stretch"
                 )
 
-            # BEAS ANOMALY RESULT
+            # GENERAL ANOMALY DETECTION
 
-            st.subheader("Beas River Anomaly Detection")
-
-            anomaly = result.get(
-                "anomaly_detection", {}
+            general_anomaly = result.get(
+                "general_anomaly_detection",
+                {}
             )
 
-            anomaly_status = anomaly.get(
-                "status",
-                "NOT_AVAILABLE"
+            display_anomaly_result(
+                "General Water Quality Anomaly Detection",
+                general_anomaly,
+                "General Water Quality Anomaly Detector"
             )
 
-            if anomaly_status == "ANOMALY":
+            # BEAS ANOMALY DETECTION
 
-                st.error(
-                    "Unusual water quality observation detected!"
-                )
+            beas_anomaly = result.get(
+                "anomaly_detection",
+                {}
+            )
 
-                st.metric(
-                    "Anomaly Score",
-                    anomaly.get("anomaly_score", "N/A")
-                )
-
-            elif anomaly_status == "NORMAL":
-
-                st.success(
-                    "No anomaly detected by the model."
-                )
-
-                st.metric(
-                    "Anomaly Score",
-                    anomaly.get("anomaly_score", "N/A")
-                )
-
-            elif anomaly_status == "NOT_AVAILABLE":
-
-                st.warning(
-                    "Anomaly detection is unavailable "
-                    "for this reading."
-                )
-
-            else:
-
-                st.warning(
-                    f"Anomaly detection status: {anomaly_status}"
-                )
-
-            st.json(anomaly)
+            display_anomaly_result(
+                "Beas River Anomaly Detection",
+                beas_anomaly,
+                "Beas River Anomaly Detector"
+            )
 
             st.subheader("Submitted Sensor Readings")
 
@@ -449,7 +479,7 @@ elif page == "Water Quality Prediction":
                 "http://127.0.0.1:8002."
             )
 
-        except (ValueError, TypeError) as error:
+        except (ValueError, TypeError, KeyError) as error:
 
             st.error(
                 f"Unable to interpret prediction response: {error}"
@@ -488,7 +518,7 @@ elif page == "Anomaly Detection":
 
         st.dataframe(
             df,
-            use_container_width=True
+            width="stretch"
         )
 
         if "anomaly_status" in df.columns:
@@ -670,7 +700,6 @@ elif page == "Forecasting":
     )
 
     forecast_df = load_csv(FORECAST_FILE)
-
     evaluation_df = load_csv(EVALUATION_FILE)
 
     if forecast_df is not None:
@@ -683,7 +712,7 @@ elif page == "Forecasting":
 
         st.dataframe(
             forecast_df,
-            use_container_width=True
+            width="stretch"
         )
 
         required_columns = {
@@ -766,8 +795,8 @@ elif page == "Forecasting":
         else:
 
             st.warning(
-                "Forecast CSV is missing one or more required "
-                "columns: indicator, year, forecast_value."
+                "Forecast CSV is missing required columns: "
+                "indicator, year, forecast_value."
             )
 
         st.download_button(
@@ -794,7 +823,7 @@ elif page == "Forecasting":
 
         st.dataframe(
             evaluation_df,
-            use_container_width=True
+            width="stretch"
         )
 
         st.caption(
@@ -905,7 +934,7 @@ elif page == "Sensor Health":
 
         st.dataframe(
             df,
-            use_container_width=True
+            width="stretch"
         )
 
         quality_columns = [
@@ -1026,7 +1055,7 @@ elif page == "SHAP Explainability":
 
                 st.dataframe(
                     df,
-                    use_container_width=True
+                    width="stretch"
                 )
 
                 st.subheader(
@@ -1079,7 +1108,7 @@ elif page == "SHAP Explainability":
 
                     st.dataframe(
                         selected_df,
-                        use_container_width=True
+                        width="stretch"
                     )
 
                     contributions = (
@@ -1229,7 +1258,7 @@ elif page == "Pollution Alerts":
 
         check_alerts = st.form_submit_button(
             "Check Pollution Alerts",
-            use_container_width=True
+            width="stretch"
         )
 
     if check_alerts:

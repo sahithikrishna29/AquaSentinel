@@ -12,8 +12,9 @@ Endpoints:
 
 Models:
     1. Water Quality Classification
-    2. Beas River Anomaly Detection (pH + Dissolved Oxygen)
-    3. Time-Series Forecasting
+    2. General Water Quality Anomaly Detection
+    3. Beas River Anomaly Detection (pH + Dissolved Oxygen)
+    4. Time-Series Forecasting
 """
 
 import os
@@ -31,6 +32,7 @@ sys.path.insert(
 )
 
 from src.classifier import classifier
+from src.anomaly_detector import anomaly_detector
 from src.beas_anomaly_inference import beas_anomaly_detector
 
 
@@ -39,9 +41,10 @@ from src.beas_anomaly_inference import beas_anomaly_detector
 app = FastAPI(
     title="AquaSentinel Water Quality ML API",
     description=(
-        "Water quality prediction API for the AquaSentinel monitoring system."
+        "Water quality classification, general anomaly detection, "
+        "Beas River anomaly detection and forecasting API."
     ),
-    version="1.1.0",
+    version="1.2.0",
 )
 
 app.add_middleware(
@@ -82,6 +85,7 @@ class SensorReading(BaseModel):
 
 class PredictionResponse(BaseModel):
     classification: dict
+    general_anomaly_detection: dict
     anomaly_detection: dict
     input_data: dict
 
@@ -93,17 +97,32 @@ async def load_models():
 
     print("\nLoading AquaSentinel ML Models...")
 
+    # Load classification model
     try:
         classifier.load()
         print("Classification model loaded successfully.")
     except Exception as e:
         print(f"WARNING: Classifier not loaded: {e}")
 
+    # Load original general anomaly detector
+    try:
+        anomaly_detector.load()
+        print("General anomaly detector loaded successfully.")
+    except Exception as e:
+        print(
+            "WARNING: General anomaly detector unavailable: "
+            f"{e}"
+        )
+
+    # Load Beas-specific anomaly detector
     try:
         beas_anomaly_detector.load()
         print("Beas anomaly detector loaded successfully.")
     except Exception as e:
-        print(f"WARNING: Beas anomaly detector not loaded: {e}")
+        print(
+            "WARNING: Beas anomaly detector not loaded: "
+            f"{e}"
+        )
 
     print("AquaSentinel API startup completed.\n")
 
@@ -117,7 +136,8 @@ async def health_check():
         "status": "healthy",
         "models": {
             "classifier": classifier._loaded,
-            "anomaly_detector": beas_anomaly_detector.loaded
+            "general_anomaly_detector": anomaly_detector._loaded,
+            "beas_anomaly_detector": beas_anomaly_detector.loaded
         },
         "message": "AquaSentinel Water Quality API is running."
     }
@@ -134,18 +154,69 @@ async def predict(reading: SensorReading):
 
     features = reading.model_dump(exclude_none=True)
 
-    # Classification
+    # -------------------------------------------------
+    # 1. WATER QUALITY CLASSIFICATION
+    # -------------------------------------------------
+
     try:
         classification_result = classifier.predict(features)
+
     except Exception as e:
         classification_result = {
+            "status": "ERROR",
             "error": str(e)
         }
 
-    # Beas anomaly detection
+    # -------------------------------------------------
+    # 2. GENERAL WATER QUALITY ANOMALY DETECTION
+    # -------------------------------------------------
+
+    if not anomaly_detector._loaded:
+
+        general_anomaly_result = {
+            "model": "General Water Quality Isolation Forest",
+            "status": "NOT_AVAILABLE",
+            "is_anomaly": None,
+            "anomaly_score": None,
+            "message": (
+                "The original general anomaly model is unavailable. "
+                "Its trained model and compatible metadata files "
+                "must be recovered before predictions can be made."
+            )
+        }
+
+    else:
+
+        try:
+            general_anomaly_result = anomaly_detector.detect(
+                features
+            )
+
+            general_anomaly_result["model"] = (
+                "General Water Quality Isolation Forest"
+            )
+
+            general_anomaly_result["status"] = (
+                "ANOMALY"
+                if general_anomaly_result["is_anomaly"]
+                else "NORMAL"
+            )
+
+        except Exception as e:
+            general_anomaly_result = {
+                "model": "General Water Quality Isolation Forest",
+                "status": "ERROR",
+                "is_anomaly": None,
+                "error": str(e)
+            }
+
+    # -------------------------------------------------
+    # 3. BEAS RIVER ANOMALY DETECTION
+    # -------------------------------------------------
+
     if features.get("do") is None:
 
-        anomaly_result = {
+        beas_anomaly_result = {
             "model": "Beas River Isolation Forest",
             "status": "NOT_AVAILABLE",
             "is_anomaly": None,
@@ -155,18 +226,26 @@ async def predict(reading: SensorReading):
     else:
 
         try:
-            anomaly_result = beas_anomaly_detector.detect(features)
+            beas_anomaly_result = beas_anomaly_detector.detect(
+                features
+            )
+
         except Exception as e:
-            anomaly_result = {
+            beas_anomaly_result = {
                 "model": "Beas River Isolation Forest",
                 "status": "ERROR",
                 "is_anomaly": None,
                 "error": str(e)
             }
 
+    # -------------------------------------------------
+    # 4. RETURN ALL RESULTS
+    # -------------------------------------------------
+
     return PredictionResponse(
         classification=classification_result,
-        anomaly_detection=anomaly_result,
+        general_anomaly_detection=general_anomaly_result,
+        anomaly_detection=beas_anomaly_result,
         input_data=features
     )
 
